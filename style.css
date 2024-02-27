@@ -7,18 +7,21 @@
     font-weight: 400;
     font-style: normal;
     margin: 0;
+    padding: 0;
 }
 
 body{
     height: 100vh;
     width: 100vw;
     margin: 0;
+    padding: 0;
 }
 
 
 
 .nav_container{
-    background-color: black;
+    background-color: #f4f4f4;
+    box-shadow: 2px 2px 50px 10px rgb(0, 0, 0);
     display: flex;
     flex-direction: column;
     height: 100vh;
@@ -60,7 +63,7 @@ body{
 }
 
 .img_information_sm .box{
-    background-color: black;
+    background-color: rgb(140, 140, 140);
     height: 100vh;
     width: 40vw;
     position: absolute;
@@ -101,6 +104,7 @@ body{
     display: flex;
     justify-content: space-between;
     gap: 70px;
+    
 
 }
 
@@ -114,5 +118,84 @@ body{
 .icon_contact_info li a i{
     font-size: 35px;
     margin-top: 20px;
+    color: white;
+    transition: 0.2s;
 }
 
+.icon_contact_info li a i:hover{
+    color: black;
+}
+.information_sm{
+    background-color:rgb(150, 150, 150) ;
+    width: 55vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 45vw;
+    margin: 0;
+    box-shadow: -2px -2px 50px 10px black;
+}
+.text_above{
+    /* background-color: black; */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 0px;
+    justify-content: center;
+    height: 50vh;
+    width: 55vw;
+    border-bottom: 2px dashed black;
+
+}
+.about_me h1{
+    font-size: 100px;
+}
+.li_info{
+    list-style: none;
+    display: flex;
+    gap: 50px;
+    font-size: 25px;
+    color: brown;
+}
+.text_information{
+    text-align: justify;
+    text-justify: inter-word;
+    margin-right: 100px;
+}
+.text_above div{
+    margin-left: 100px;
+}
+.text_under{
+    /* background-color: black; */
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    height: 50vh;
+    width: 55vw;
+}
+.text_under div h1{
+    font-size: 50px;
+}
+
+.text_under div{
+    margin-left: 100px;
+}
+
+.grid_container{
+    display: grid;
+    grid-template-columns: repeat(2,200px);
+    grid-template-rows: repeat(2, 200px);
+    margin-top: 50px;
+    gap: 50px;
+    overflow: scroll;
+    height: 365px;
+    width: 700px;
+}
+
+
+.item i{
+    font-size: 50px;
+}
